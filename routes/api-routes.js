@@ -58,3 +58,5 @@ router.put('/api/workouts/:id', (req,response) => {
 })
 
 // DELETE
+
+module.exports = router
