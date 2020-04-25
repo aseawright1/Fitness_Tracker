@@ -15,7 +15,7 @@ router.post('/api/workouts', ({body}, response) => {
 // READ / GET WORKOUTS
 router.get('/api/workouts', (req, response) => {
     Workout.find({})
-    .sort({date: -1})``
+    .sort({date: -1})
     .then((result) => {
         result.forEach((workout,index) => {
             let total = 0
@@ -23,7 +23,7 @@ router.get('/api/workouts', (req, response) => {
                 total += exercise.duration
             })
             result[index].totalDuration = total
-            console.log(`workout: ${workout}. duration: ${total}`)
+            console.log(`workout: ${workout}`)
         })
         response.json(result)
     })
