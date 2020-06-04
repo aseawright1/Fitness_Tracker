@@ -1,4 +1,4 @@
-# 12.Fitness_Tracker
+# Fitness_Tracker
  Log your workouts and see past and present stats
 
 ## What this project is
